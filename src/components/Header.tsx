@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
+import cvFile from '../assets/AhmedAtiiaCV.pdf';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-gray-800">
-            DevOps Portfolio
+            ِAhmed Atiia Portfolio
           </div>
           
           {/* Desktop Navigation */}
@@ -64,10 +65,21 @@ const Header = () => {
             >
               Contact
             </button>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
+
+            <a
+              href={cvFile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+              >
+              <span className="text-secondary transition duration-300 group-hover:text-card ease">
+                Resume
+              </span>
+            </a>
+            {/* <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
               <Download size={16} />
               Download CV
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -113,10 +125,17 @@ const Header = () => {
               >
                 Contact
               </button>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2 w-fit">
-                <Download size={16} />
-                Download CV
-              </button>
+              
+              <a
+              href={cvFile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+              >
+              <span className="text-secondary transition duration-300 group-hover:text-card ease">
+                Resume
+              </span>
+            </a>
             </div>
           </nav>
         )}

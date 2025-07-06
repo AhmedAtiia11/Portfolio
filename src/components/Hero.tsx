@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import profileImage from '../assets/1.ico';
 
 const Hero = () => {
   return (
@@ -7,8 +8,8 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-20">
         <div className="text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl font-bold text-gray-600">
-              Photo
+            <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl font-bold text-gray-600 overflow-hidden">
+              <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
               Ahmed Atiia
@@ -30,7 +31,7 @@ const Hero = () => {
           
           <div className="flex justify-center gap-6 mb-8">
             <a
-              href="https://linkedin.com/in/ahmed-atiia"
+              href="https://www.linkedin.com/in/ahmed-atiia-50b791176/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -38,15 +39,15 @@ const Hero = () => {
               <Linkedin size={20} />
               LinkedIn
             </a>
-            <a
-              href="mailto:ahmed.atiia@gmail.com"
+            <a 
+              href="mailto:ahmedatya1288@gmail.com"
               className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors"
             >
               <Mail size={20} />
               Email
             </a>
             <a
-              href="https://github.com/ahmed-atiia"
+              href="https://github.com/AhmedAtiia11"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
