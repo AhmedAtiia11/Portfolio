@@ -4,35 +4,37 @@ import { Server, Cloud, Code, Database, Shield, GitBranch } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      icon: <Cloud className="w-8 h-8 text-blue-600" />,
-      title: "Cloud Platforms",
-      skills: ["AWS", "EC2", "S3", "Lambda", "CloudFormation"]
-    },
-    {
       icon: <Server className="w-8 h-8 text-green-600" />,
       title: "Containerization",
-      skills: ["Docker", "Kubernetes", "Container Orchestration", "Microservices"]
+      skills: ["Kubernetes" , "Docker", "Helm"]
     },
     {
       icon: <GitBranch className="w-8 h-8 text-purple-600" />,
       title: "CI/CD & Automation",
-      skills: ["Jenkins", "GitLab CI", "GitHub Actions", "Automation Scripts"]
+      skills: ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD"], 
     },
     {
-      icon: <Database className="w-8 h-8 text-orange-600" />,
-      title: "Infrastructure",
-      skills: ["Terraform", "Ansible", "Infrastructure as Code", "Configuration Management"]
+      icon: <Cloud className="w-8 h-8 text-blue-600" />,
+      title: "Cloud and Infrastructure",
+      skills: ["AWS", "Terraform", "Ansible"]
     },
     {
       icon: <Shield className="w-8 h-8 text-red-600" />,
       title: "Monitoring & Security",
-      skills: ["Prometheus", "Grafana", "Security Best Practices", "System Monitoring"]
+      skills: ["Prometheus", "Grafana", "Loki","SonarQube", "Trivy"]
     },
     {
       icon: <Code className="w-8 h-8 text-indigo-600" />,
       title: "Programming & Scripting",
-      skills: ["Python", "Bash", "Shell Scripting", "Automation"]
+      skills: ["Python", "Bash"]
+    },
+    {
+      icon: <Database className="w-8 h-8 text-orange-600" />,
+      title: "Web Frameworks",
+      skills: ["Django", "Flask", "HTML", "CSS"]
     }
+    
+
   ];
 
   return (

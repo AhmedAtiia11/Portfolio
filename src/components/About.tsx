@@ -27,17 +27,14 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto px-90">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm a DevOps Engineer driven by self-learning and a constant curiosity to explore new technologies, tools, and methodologies. I enjoy diving deep into systems, understanding how they work, and finding ways to improve them.
-            This passion extends to troubleshooting challenges, optimizing workflows, and building automated solutions that enhance efficiency and reliability. I'm always looking for ways to push the boundaries of what's possible.
-
-            My experience spans high-impact projects where I’ve implemented GitOps workflows, enhanced deployment efficiency, and ensured system uptime across multiple sites. I'm passionate about infrastructure as code, observability, and delivering secure, maintainable systems using DevSecOps practices.
-
-            Whether building microservices from the ground up or streamlining operations for existing applications, I bring a problem-solving mindset and an eye for continuous improvement.
-          </p>
+            I’m a DevOps Engineer fueled by curiosity and a passion for automation, efficiency, and problem solving. 
+            From building microservices to streamlining GitOps workflows,
+            I thrive on optimizing systems and driving continuous improvement. 
+            Whether it’s reducing downtime or boosting deployment speed, I’m always pushing for better.          </p>
         </div>
 {/* 
         <div className="grid md:grid-cols-2 gap-12 items-center">
