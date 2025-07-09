@@ -32,7 +32,8 @@ const About = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             I’m a DevOps Engineer fueled by curiosity and a passion for automation, efficiency, and problem solving. 
-            From building microservices to streamlining GitOps workflows,
+            From building microservices to streamlining GitOps workflows. </p>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto mt-4">
             I thrive on optimizing systems and driving continuous improvement. 
             Whether it’s reducing downtime or boosting deployment speed, I’m always pushing for better.          </p>
         </div>
