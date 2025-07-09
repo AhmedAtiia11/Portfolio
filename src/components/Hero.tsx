@@ -40,12 +40,31 @@ const Hero = () => {
               LinkedIn
             </a>
             <a 
-              href="mailto:ahmedatya1288@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedatya1288@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors"
             >
               <Mail size={20} />
               Email
             </a>
+
+
+
+{/* <a 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedatya1288@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors"
+                >
+                  Ahmedatya1288@gmail.com
+                </a> */}
+
+
+
+
+
+
             <a
               href="https://github.com/AhmedAtiia11"
               target="_blank"
