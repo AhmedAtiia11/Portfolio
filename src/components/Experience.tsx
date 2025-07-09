@@ -4,34 +4,44 @@ import { Calendar, MapPin, Award } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      company: "Current Role",
+      company: "Integrated Solution For Ports",
       position: "DevOps Engineer",
       period: "Present",
       location: "Egypt",
       achievements: [
-        "Implementing cloud infrastructure solutions using AWS services",
-        "Managing containerized applications with Docker and Kubernetes",
-        "Building and maintaining CI/CD pipelines for automated deployments",
-        "Developing infrastructure as code using modern DevOps tools"
+        "Built and optimized Kubernetes clusters with Microk8s and Implemented a monitoring stack for high-availability infrastructure.",
+        "Automated GitOps workflows with Jenkins, Trivy, SonarQube, and ArgoCD, streamlining Docker builds and zero-downtime deployments.",
+        "Boosted application reliability by architecting microservices, deploying to 15+ mission-critical projects for enhanced efficiency.",
+        "Streamlined CI/CD pipelines to legacy applications achieving increase in deployment frequency while reducing manual intervention."
+      ]
+    },
+    {
+      company: "Freelancer",
+      position: "DevOps Engineer",
+      period: "Present",
+      location: "Egypt",
+      achievements: [
+        "Architected microservices Solutions using Kubernetes, Docker, Jenkins, Terraform, AWS, Prometheus, and Grafana, delivering tailored, high-quality client solutions.",
+      ]
+    },
+    {
+      company: "Espace",
+      position: "DevOps Intern",
+      period: "Aug 2022 - Oct 2022",
+      location: "Egypt",
+      achievements: [
+        "Dockerized Ruby/React full-stack apps, served via Nginx reverse proxy, with automated CI/CD pipelines using Jenkins.",
+        "Collaborated on large-scale projects, leveraging Kubernetes, Docker, Git, Ansible, Jenkins, Terraform, and Bash for efficient real-world deployments.",
       ]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      year: "2024"
-    },
-    {
-      name: "Docker Certified Associate",
-      issuer: "Docker",
-      year: "2023"
-    },
-    {
-      name: "Kubernetes Administrator",
+      name: "CKA: Certified Kubernetes Administrator",
       issuer: "Cloud Native Computing Foundation",
-      year: "2023"
+      year: "Jan 2025",
+      url: "https://www.credly.com/badges/75c26075-3af9-401a-bd83-8b0a98ae6d02/public_url"
     }
   ];
 
@@ -91,7 +101,14 @@ const Experience = () => {
                     </div>
                     <div className="flex-1">
                       <h4 className="text-lg font-semibold text-gray-800 mb-1">
-                        {cert.name}
+                        <a 
+                          href={cert.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-blue-600 hover:underline"
+                        >
+                          {cert.name}
+                        </a>
                       </h4>
                       <p className="text-gray-600">{cert.issuer}</p>
                       <p className="text-sm text-gray-500 mt-1">Earned in {cert.year}</p>
