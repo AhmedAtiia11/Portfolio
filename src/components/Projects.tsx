@@ -4,49 +4,67 @@ import { Github, ExternalLink, Star } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Cloud Infrastructure Automation",
-      description: "Automated AWS infrastructure deployment using Terraform and CloudFormation for scalable, repeatable infrastructure provisioning.",
-      tech: ["AWS", "Terraform", "CloudFormation", "EC2", "S3"],
-      highlights: [
-        "Automated infrastructure provisioning",
-        "Reduced deployment time by 70%",
-        "Implemented infrastructure as code"
-      ],
-      featured: true
-    },
-    {
-      title: "Containerized Application Platform",
-      description: "Built a comprehensive containerization platform using Docker and Kubernetes for microservices deployment and orchestration.",
-      tech: ["Docker", "Kubernetes", "Container Orchestration", "Microservices"],
-      highlights: [
-        "Containerized 20+ applications",
-        "Implemented auto-scaling",
-        "Zero-downtime deployments"
-      ],
-      featured: true
-    },
-    {
-      title: "CI/CD Pipeline Implementation",
-      description: "Developed automated CI/CD pipelines using Jenkins and GitLab CI for continuous integration and deployment workflows.",
-      tech: ["Jenkins", "GitLab CI", "GitHub Actions", "Automation"],
-      highlights: [
-        "Automated testing and deployment",
-        "Reduced manual errors by 90%",
-        "Integrated security scanning"
+      title: "Connection Test App",
+      description: "Orchestrated the deployment of back-end and front-end applications on Kubernetes, achieved a reduction in deployment time and enhanced system stability and productivity through a comprehensive CI/CD pipeline and proactive monitoring tools.",
+      tech: ["Kubernetes", "Django", "Jenkins", "ArgoCD", "Prometheus", "Grafana", "Ngrok"],
+      githubUrls: [
+        {
+          label: "CI-Repo",
+          url: "https://github.com/AhmedAtiia11/Online-Test-App-CI"
+        },
+        {
+          label: "CD-Repo",
+          url: "https://github.com/AhmedAtiia11/Online_Test_App_CD"
+        }
       ],
       featured: false
     },
     {
-      title: "Monitoring & Alerting System",
-      description: "Implemented comprehensive monitoring solution with Prometheus and Grafana for real-time system monitoring and alerting.",
-      tech: ["Prometheus", "Grafana", "Monitoring", "Alerting"],
-      highlights: [
-        "Real-time system monitoring",
-        "Custom alerting rules",
-        "Improved system reliability"
+      title: "EKS Cluster Autoscaler",
+      description: "Designed and deployed an Amazon EKS cluster with integrated autoscaling features; optimized resource allocation during peak loads, Leading to reduction in response time and significantly enhancing user experience.",
+      tech: ["Amazon EKS", "Kubernetes", "Autoscaling"],
+      githubUrls: [
+        {
+          label: "Cluster Autoscaler",
+          url: "https://github.com/AhmedAtiia11/EKS-Cluster-AutoScaller"
+        }
       ],
       featured: false
-    }
+    },
+    // {
+    //   title: "CI/CD Pipeline Implementation",
+    //   description: "Developed automated CI/CD pipelines using Jenkins and GitLab CI for continuous integration and deployment workflows.",
+    //   tech: ["Jenkins", "GitLab CI", "GitHub Actions", "Automation"],
+    //   highlights: [
+    //     "Automated testing and deployment",
+    //     "Reduced manual errors by 90%",
+    //     "Integrated security scanning"
+    //   ],
+    //   githubUrls: [
+    //     {
+    //       label: "Main",
+    //       url: "https://github.com/REPLACE_WITH_ACTUAL_GITHUB_URL/cicd-pipeline" // Replace with actual GitHub URL
+    //     }
+    //   ],
+    //   featured: false
+    // },
+    // {
+    //   title: "Monitoring & Alerting System",
+    //   description: "Implemented comprehensive monitoring solution with Prometheus and Grafana for real-time system monitoring and alerting.",
+    //   tech: ["Prometheus", "Grafana", "Monitoring", "Alerting"],
+    //   highlights: [
+    //     "Real-time system monitoring",
+    //     "Custom alerting rules",
+    //     "Improved system reliability"
+    //   ],
+    //   githubUrls: [
+    //     {
+    //       label: "Main",
+    //       url: "https://github.com/REPLACE_WITH_ACTUAL_GITHUB_URL/monitoring-system" // Replace with actual GitHub URL
+    //     }
+    //   ],
+    //   featured: false
+    // }
   ];
 
   return (
@@ -55,7 +73,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Key projects that demonstrate my expertise in DevOps engineering and cloud infrastructure.
+            Key projects that demonstrate my expertise in DevOps and cloud infrastructure.
           </p>
         </div>
 
@@ -82,7 +100,7 @@ const Projects = () => {
                   {project.description}
                 </p>
                 
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <h4 className="text-sm font-semibold text-gray-800 mb-2">Key Achievements:</h4>
                   <ul className="space-y-1">
                     {project.highlights.map((highlight, hIndex) => (
@@ -92,7 +110,7 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
                 
                 <div className="mb-6">
                   <h4 className="text-sm font-semibold text-gray-800 mb-2">Technologies:</h4>
@@ -109,14 +127,22 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
-                    <Github size={16} />
-                    <span className="text-sm">Code</span>
-                  </button>
-                  <button className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+                  {project.githubUrls.map((repo, rIndex) => (
+                    <a
+                      key={rIndex}
+                      href={repo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+                    >
+                      <Github size={16} />
+                      <span className="text-sm">{repo.label}</span>
+                    </a>
+                  ))}
+                  {/* <button className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
                     <ExternalLink size={16} />
                     <span className="text-sm">Demo</span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
