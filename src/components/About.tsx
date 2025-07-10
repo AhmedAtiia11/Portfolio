@@ -37,42 +37,7 @@ const About = () => {
             I thrive on optimizing systems and driving continuous improvement. 
             Whether it’s reducing downtime or boosting deployment speed, I’m always pushing for better.          </p>
         </div>
-{/* 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">My Journey</h3>
-            <div className="space-y-4 text-gray-700">
-              <p>
-                I'm a DevOps Engineer driven by self-learning and a constant curiosity to explore new technologies, tools, and methodologies. I enjoy diving deep into systems, understanding how they work, and finding ways to improve them. This passion extends to troubleshooting challenges, optimizing workflows, and building automated solutions that enhance efficiency and reliability. I'm always looking for ways to push the boundaries of what's possible.
-              </p>
-              <p>
-                I have hands-on experience with AWS cloud services, Docker containerization, 
-                Kubernetes orchestration, and various automation tools. I'm passionate about 
-                creating efficient, reliable, and secure infrastructure solutions.
-              </p>
-              <p>
-                My approach combines technical expertise with a focus on collaboration, 
-                enabling development teams to deploy faster and more reliably while 
-                maintaining high standards of security and performance.
-              </p>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {highlights.map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow"
-              >
-                <div className="mb-4">{item.icon}</div>
-                <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-gray-600 text-sm">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );
