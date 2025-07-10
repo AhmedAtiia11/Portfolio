@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
-import cvFile from '../assets/AhmedAtiiaCV.pdf';
+import cvFile from '../assets/Ahmed Atiia CV.pdf';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-gray-800">
-            ِAhmed Atiia Portfolio
+            Ahmed Atiia Portfolio
           </div>
           
           {/* Desktop Navigation */}
@@ -76,10 +76,7 @@ const Header = () => {
                 Resume
               </span>
             </a>
-            {/* <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
-              <Download size={16} />
-              Download CV
-            </button> */}
+
           </nav>
 
           {/* Mobile Menu Button */}
