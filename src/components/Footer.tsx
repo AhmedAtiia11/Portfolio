@@ -11,14 +11,6 @@ const Footer = () => {
               © 2025 Ahmed Atiia - DevOps Engineer Portfolio
             </p>
           </div>
-          
-          {/* <div className="flex items-center gap-2 text-gray-300">
-            <span>Built with</span>
-            <Heart className="w-4 h-4 text-red-500" />
-            <span>and</span>
-            <Code className="w-4 h-4 text-blue-400" />
-            <span>using React & TypeScript</span>
-          </div> */}
         </div>
       </div>
     </footer>
