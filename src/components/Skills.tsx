@@ -51,7 +51,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transition-shadow"
             >
               <div className="mb-6">{category.icon}</div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">

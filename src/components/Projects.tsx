@@ -47,7 +47,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden ${
+              className={`bg-white rounded-xl shadow-md hover:shadow-2xl transition-shadow overflow-hidden ${
                 project.featured ? 'border-2 border-blue-200' : ''
               }`}
             >

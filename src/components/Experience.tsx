@@ -94,7 +94,7 @@ const Experience = () => {
             <h3 className="text-2xl font-bold text-gray-800 mb-8">Certifications</h3>
             <div className="space-y-6">
               {certifications.map((cert, index) => (
-                <div key={index} className="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                <div key={index} className="bg-gray-50 p-6 rounded-xl hover:shadow-2xl transition-shadow">
                   <div className="flex items-start gap-4">
                     <div className="bg-blue-100 p-3 rounded-lg">
                       <Award className="w-6 h-6 text-blue-600" />
