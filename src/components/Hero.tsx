@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
-import profileImage from '../assets/1.ico';
+import profileImage from '../assets/aatiia.ico';
 
 const Hero = () => {
   return (
