@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, Phone, MapPin, Download, Github } from 'lucide-react';
-import cvFile from '../assets/AhmedAtiiaCV.pdf';
+import cvFile from '../assets/Ahmed Atiia CV.pdf';
 
 const Contact = () => {
   return (
@@ -103,15 +103,6 @@ const Contact = () => {
 };
 
 
-<a
-              href={cvFile}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2 mx-auto"
-              >
-              <span className="text-secondary transition duration-300 group-hover:text-card ease">
-                Resume
-              </span>
-            </a>
+
 
 export default Contact;
