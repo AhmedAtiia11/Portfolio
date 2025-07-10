@@ -61,7 +61,7 @@ const Experience = () => {
             <h3 className="text-2xl font-bold text-gray-800 mb-8">Work Experience</h3>
             <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="border-l-4 border-blue-600 pl-6">
+                <div key={index} className="border-l-4 border-blue-600 pl-6 rounded-xl hover:shadow-2xl transition-shadow">
                   <div className="mb-4">
                     <h4 className="text-xl font-bold text-gray-800">{exp.position}</h4>
                     <p className="text-lg text-blue-600 font-medium">{exp.company}</p>
