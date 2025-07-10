@@ -48,23 +48,6 @@ const Hero = () => {
               <Mail size={20} />
               Email
             </a>
-
-
-
-{/* <a 
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedatya1288@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors"
-                >
-                  Ahmedatya1288@gmail.com
-                </a> */}
-
-
-
-
-
-
             <a
               href="https://github.com/AhmedAtiia11"
               target="_blank"
