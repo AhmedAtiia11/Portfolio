@@ -30,41 +30,7 @@ const Projects = () => {
         }
       ],
       featured: false
-    },
-    // {
-    //   title: "CI/CD Pipeline Implementation",
-    //   description: "Developed automated CI/CD pipelines using Jenkins and GitLab CI for continuous integration and deployment workflows.",
-    //   tech: ["Jenkins", "GitLab CI", "GitHub Actions", "Automation"],
-    //   highlights: [
-    //     "Automated testing and deployment",
-    //     "Reduced manual errors by 90%",
-    //     "Integrated security scanning"
-    //   ],
-    //   githubUrls: [
-    //     {
-    //       label: "Main",
-    //       url: "https://github.com/REPLACE_WITH_ACTUAL_GITHUB_URL/cicd-pipeline" // Replace with actual GitHub URL
-    //     }
-    //   ],
-    //   featured: false
-    // },
-    // {
-    //   title: "Monitoring & Alerting System",
-    //   description: "Implemented comprehensive monitoring solution with Prometheus and Grafana for real-time system monitoring and alerting.",
-    //   tech: ["Prometheus", "Grafana", "Monitoring", "Alerting"],
-    //   highlights: [
-    //     "Real-time system monitoring",
-    //     "Custom alerting rules",
-    //     "Improved system reliability"
-    //   ],
-    //   githubUrls: [
-    //     {
-    //       label: "Main",
-    //       url: "https://github.com/REPLACE_WITH_ACTUAL_GITHUB_URL/monitoring-system" // Replace with actual GitHub URL
-    //     }
-    //   ],
-    //   featured: false
-    // }
+    }
   ];
 
   return (
