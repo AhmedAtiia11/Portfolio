@@ -26,7 +26,7 @@ const Skills = () => {
     {
       icon: <Code className="w-8 h-8 text-indigo-600" />,
       title: "Programming & Scripting",
-      skills: ["Python", "Bash"]
+      skills: ["Golang", "Python", "Bash"]
     },
     {
       icon: <Database className="w-8 h-8 text-orange-600" />,
