@@ -15,8 +15,7 @@ const Experience = () => {
         "Integrated CSI storage solution using Longhorn and MinIO for persistent storage.",
         "Deployed GitLab Operator to automate releases and streamline CI/CD workflows.",
         "Refactored applications into microservices, deployed across 15+ critical projects.",
-        "Optimized CI/CD pipelines, cutting manual steps and reducing errors by 80%.",
-        "Maintained production servers across multiple sites with proactive patching."
+        "Optimized CI/CD pipelines, cutting manual steps and reducing errors by 80%."
       ]
     },
     {

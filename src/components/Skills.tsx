@@ -21,7 +21,7 @@ const Skills = () => {
     {
       icon: <GitBranch className="w-8 h-8 text-purple-600" />,
       title: "CI/CD & GitOps",
-      skills: ["Jenkins", "GitHub Actions", "ArgoCD", "GitLab Operator"], 
+      skills: ["Jenkins", "GitHub Actions", "ArgoCD", "GitLab CI","GitLab Operator"], 
     },
     {
       icon: <Cloud className="w-8 h-8 text-blue-600" />,
@@ -48,11 +48,11 @@ const Skills = () => {
       title: "Programming & Scripting",
       skills: ["Golang", "Python", "Bash"]
     },
-    // {
-    //   icon: <Database className="w-8 h-8 text-yellow-600" />,
-    //   title: "Web Frameworks",
-    //   skills: ["Django", "Flask"]
-    // },
+    {
+      icon: <Database className="w-8 h-8 text-yellow-600" />,
+      title: "Web Frameworks",
+      skills: ["Django", "Flask","HTML" ,"CSS" ]
+    },
     {
       icon: <Layers className="w-8 h-8 text-gray-600" />,
       title: "Others",
