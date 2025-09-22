@@ -6,22 +6,27 @@ const Experience = () => {
     {
       company: "Integrated Solution For Ports",
       position: "DevOps Engineer",
-      period: "Present",
+      period: "Sep 2024 - Present",
       location: "Egypt",
       achievements: [
-        "Built and optimized Kubernetes clusters with Microk8s and Implemented a monitoring stack for high-availability infrastructure.",
-        "Automated GitOps workflows with Jenkins, Trivy, SonarQube, and ArgoCD, streamlining Docker builds and zero-downtime deployments.",
-        "Boosted application reliability by architecting microservices, deploying to 15+ mission-critical projects for enhanced efficiency.",
-        "Streamlined CI/CD pipelines to legacy applications achieving increase in deployment frequency while reducing manual intervention."
+        "Built and optimized Kubernetes clusters with Microk8s for scalable orchestration.",
+        "Implemented monitoring stack (Prometheus, Grafana, Loki) achieving near-100% uptime.",
+        "Automated GitOps with Jenkins, Trivy, SonarQube, and ArgoCD for zero-downtime releases.",
+        "Integrated CSI storage solution using Longhorn and MinIO for persistent storage.",
+        "Deployed GitLab Operator to automate releases and streamline CI/CD workflows.",
+        "Refactored applications into microservices, deployed across 15+ critical projects.",
+        "Optimized CI/CD pipelines, cutting manual steps and reducing errors by 80%.",
+        "Maintained production servers across multiple sites with proactive patching."
       ]
     },
     {
       company: "Freelancer",
       position: "DevOps Engineer",
-      period: "Present",
+      period: "Dec 2024 - Jun 2025",
       location: "Egypt",
       achievements: [
-        "Architected microservices Solutions using Kubernetes, Docker, Jenkins, Terraform, AWS, Prometheus, and Grafana, delivering tailored, high-quality client solutions.",
+        "Delivered custom DevOps solutions from microservices design to AWS optimization.",
+        "Used Kubernetes, Docker, Jenkins, Terraform, Prometheus, and Grafana to build automated environments, reducing costs and accelerating delivery."
       ]
     },
     {
@@ -30,8 +35,8 @@ const Experience = () => {
       period: "Aug 2022 - Oct 2022",
       location: "Egypt",
       achievements: [
-        "Dockerized Ruby/React full-stack apps, served via Nginx reverse proxy, with automated CI/CD pipelines using Jenkins.",
-        "Collaborated on large-scale projects, leveraging Kubernetes, Docker, Git, Ansible, Jenkins, Terraform, and Bash for efficient real-world deployments.",
+        "Dockerized Ruby/React apps, served via Nginx, and built CI/CD with Jenkins.",
+        "Contributed to large-scale deployments using Kubernetes, Ansible, Jenkins, and Terraform."
       ]
     }
   ];

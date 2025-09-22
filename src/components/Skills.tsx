@@ -1,40 +1,63 @@
 import React from 'react';
-import { Server, Cloud, Code, Database, Shield, GitBranch } from 'lucide-react';
+import { 
+  Server, 
+  Cloud, 
+  Code, 
+  Database, 
+  Shield, 
+  GitBranch, 
+  HardDrive, 
+  Network, 
+  Layers 
+} from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: <Server className="w-8 h-8 text-green-600" />,
-      title: "Containerization",
-      skills: ["Kubernetes" , "Docker", "Helm"]
+      title: "Containers & Orchestration",
+      skills: ["Kubernetes", "Helm", "Docker"]
     },
     {
       icon: <GitBranch className="w-8 h-8 text-purple-600" />,
-      title: "CI/CD & Automation",
-      skills: ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD"], 
+      title: "CI/CD & GitOps",
+      skills: ["Jenkins", "GitHub Actions", "ArgoCD", "GitLab Operator"], 
     },
     {
       icon: <Cloud className="w-8 h-8 text-blue-600" />,
-      title: "Cloud and Infrastructure",
+      title: "Cloud & Infrastructure",
       skills: ["AWS", "Terraform", "Ansible"]
     },
     {
       icon: <Shield className="w-8 h-8 text-red-600" />,
-      title: "Monitoring & Security",
-      skills: ["Prometheus", "Grafana", "Loki","SonarQube", "Trivy"]
+      title: "Monitoring & Observability",
+      skills: ["Prometheus", "Grafana", "Loki", "OpenTelemetry"]
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-pink-600" />,
+      title: "DevSecOps",
+      skills: ["SonarQube", "Trivy"]
+    },
+    {
+      icon: <HardDrive className="w-8 h-8 text-orange-600" />,
+      title: "Storage & Networking",
+      skills: ["Longhorn", "MinIO", "MetalLB"]
     },
     {
       icon: <Code className="w-8 h-8 text-indigo-600" />,
       title: "Programming & Scripting",
       skills: ["Golang", "Python", "Bash"]
     },
+    // {
+    //   icon: <Database className="w-8 h-8 text-yellow-600" />,
+    //   title: "Web Frameworks",
+    //   skills: ["Django", "Flask"]
+    // },
     {
-      icon: <Database className="w-8 h-8 text-orange-600" />,
-      title: "Web Frameworks",
-      skills: ["Django", "Flask", "HTML", "CSS"]
+      icon: <Layers className="w-8 h-8 text-gray-600" />,
+      title: "Others",
+      skills: ["Nexus Repository", "Harbor", "Keycloak", "Linux Administration"]
     }
-    
-
   ];
 
   return (
@@ -43,7 +66,7 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A comprehensive toolkit for modern DevOps practices and cloud-native solutions.
+            A comprehensive toolkit for modern DevOps practices, automation, and cloud-native solutions.
           </p>
         </div>
 
