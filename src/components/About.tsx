@@ -31,12 +31,16 @@ const About = () => {
         <div className="mb-16">
           <h2 className="text-center text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-left text-xl text-gray-800 max-w-4xl mx-auto">
-              I'm a DevOps Engineer focused on building automated, reliable, and scalable systems that empower fast and secure software delivery. I enjoy designing microservices architectures, optimizing CI/CD and GitOps workflows, and solving deep infrastructure challenges that reduce downtime and improve performance.
-          </p>
+          I specialize in Kubernetes orchestration, GitOps workflows, and secure CI/CD automation—designing platforms that are resilient, observable, and built for high performance. I enjoy tackling complex infrastructure challenges end-to-end, simplifying operations, reducing deployment friction, and improving overall system reliability.          </p>
           <p className="text-lg text-gray-900 max-w-4xl mx-auto mt-4">
-              I'm committed to strengthening my expertise in DevSecOps and Site Reliability Engineering, integrating security into automation and enhancing system scalability, observability, and resilience. Always learning, I stay driven by curiosity and a passion for continuous improvement.
-                  </p>
-
+            I’m passionate about continuous learning, DevSecOps practices, and finding smarter ways to design and automate modern infrastructure. Every challenge is an opportunity to build something cleaner, faster, and more reliable.                  </p>
+          <p>
+          You can reach me at{' '}
+          <a href="mailto:ahmedatya1288@gmail.com" className="text-blue-600 hover:underline">
+            ahmedatya1288@gmail.com
+          </a>{' '}
+          for opportunities or collaborations.
+        </p>
         </div>
 
       </div>

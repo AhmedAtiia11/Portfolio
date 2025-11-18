@@ -21,9 +21,7 @@ const Hero = () => {
           </div>
           
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed font-bold">
-              I specialize in Kubernetes orchestration, GitOps automation, DevSecOps tooling, and cloud-native infrastructure.
-              With hands-on experience in CI/CD, observability, and secure delivery pipelines, I help teams ship reliable, scalable, and high-performing applications.
-
+              I’m a DevOps Engineer focused on building reliable, scalable, and secure cloud-native systems through Kubernetes, GitOps, and automated CI/CD pipelines
             
           </p>
           
