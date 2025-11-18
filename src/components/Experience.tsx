@@ -9,10 +9,12 @@ const Experience = () => {
       period: "Sep 2024 - Present",
       location: "Egypt",
       achievements: [
-        "Built and optimized Kubernetes clusters with Microk8s for scalable orchestration.",
+        "Built and optimized Kubernetes clusters for scalable orchestration.",
         "Implemented monitoring stack (Prometheus, Grafana, Loki) achieving near-100% uptime.",
         "Automated GitOps with Jenkins, Trivy, SonarQube, and ArgoCD for zero-downtime releases.",
+        "Enhanced pipeline security by embedding DevSecOps tools and automating vulnerability scanning",
         "Integrated CSI storage solution using Longhorn and MinIO for persistent storage.",
+        "Accelerated CI/CD performance by integrating Nexus Repository.",
         "Deployed GitLab Operator to automate releases and streamline CI/CD workflows.",
         "Refactored applications into microservices, deployed across 15+ critical projects.",
         "Optimized CI/CD pipelines, cutting manual steps and reducing errors by 80%."

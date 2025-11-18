@@ -31,13 +31,13 @@ const About = () => {
         <div className="mb-16">
           <h2 className="text-center text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-left text-xl text-gray-800 max-w-4xl mx-auto">
-            I'm a DevOps Engineer driven by curiosity and a passion for crafting robust, automated solutions that boost system reliability and efficiency.
-             From architecting microservices to streamlining GitOps workflows,
-             I dive deep into problem-solving, optimizing infrastructure, and reducing downtime to deliver seamless deployments. </p>
-          <p className="text-lg text-gray-900 max-w-4xl mx-auto mt-4">
-            I'm excited about exploring DevSecOps to embed security into automation and delving into Site Reliability Engineering (SRE) 
-            to enhance system scalability and performance, always seeking new tools and methodologies to drive continuous improvement.</p>
-        </div>
+  I'm a DevOps Engineer focused on building automated, reliable, and scalable systems that empower fast and secure software delivery. I enjoy designing microservices architectures, optimizing CI/CD and GitOps workflows, and solving deep infrastructure challenges that reduce downtime and improve performance.
+</p>
+
+<p className="text-lg text-gray-900 max-w-4xl mx-auto mt-4">
+  I'm committed to strengthening my expertise in DevSecOps and Site Reliability Engineering, integrating security into automation and enhancing system scalability, observability, and resilience. Always learning, I stay driven by curiosity and a passion for continuous improvement.
+</p>
+
 
       </div>
     </section>

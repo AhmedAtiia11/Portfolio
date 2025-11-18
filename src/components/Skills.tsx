@@ -15,18 +15,18 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: <Server className="w-8 h-8 text-green-600" />,
-      title: "Containers & Orchestration",
+      title: "Containers and Orchestration",
       skills: ["Kubernetes", "Helm", "Docker"]
     },
     {
       icon: <GitBranch className="w-8 h-8 text-purple-600" />,
-      title: "CI/CD & GitOps",
-      skills: ["Jenkins", "GitHub Actions", "ArgoCD", "GitLab CI","GitLab Operator"], 
+      title: "CI/CD and Artifact Management",
+      skills: ["Jenkins", "GitHub Actions", "ArgoCD", "GitLab CI","GitLab Operator","Nexus Repository", "Harbor"], 
     },
     {
       icon: <Cloud className="w-8 h-8 text-blue-600" />,
-      title: "Cloud & Infrastructure",
-      skills: ["AWS", "Terraform", "Ansible"]
+      title: "Cloud and Infrastructure",
+      skills: ["AWS", "Terraform", "Ansible", "Linux (L1/L2)", "Networking (MetalLB)", "Longhorn", "MinIO"]
     },
     {
       icon: <Shield className="w-8 h-8 text-red-600" />,
@@ -36,28 +36,28 @@ const Skills = () => {
     {
       icon: <Shield className="w-8 h-8 text-pink-600" />,
       title: "DevSecOps",
-      skills: ["SonarQube", "Trivy"]
+      skills: ["SonarQube", "Trivy", "OPA Conftest", "Talisman", "Falco", "Istio", "Vault" , "Keycloak"]
     },
-    {
-      icon: <HardDrive className="w-8 h-8 text-orange-600" />,
-      title: "Storage & Networking",
-      skills: ["Longhorn", "MinIO", "MetalLB"]
-    },
+    // {
+    //   icon: <HardDrive className="w-8 h-8 text-orange-600" />,
+    //   title: "Storage & Networking",
+    //   skills: ["Longhorn", "MinIO", "MetalLB"]
+    // },
     {
       icon: <Code className="w-8 h-8 text-indigo-600" />,
       title: "Programming & Scripting",
       skills: ["Golang", "Python", "Bash"]
-    },
-    {
-      icon: <Database className="w-8 h-8 text-yellow-600" />,
-      title: "Web Frameworks",
-      skills: ["Django", "Flask","HTML" ,"CSS" ]
-    },
-    {
-      icon: <Layers className="w-8 h-8 text-gray-600" />,
-      title: "Others",
-      skills: ["Nexus Repository", "Harbor", "Keycloak", "Linux Administration"]
     }
+    // {
+    //   icon: <Database className="w-8 h-8 text-yellow-600" />,
+    //   title: "Web Frameworks",
+    //   skills: ["Django", "Flask","HTML" ,"CSS" ]
+    // },
+    // {
+    //   icon: <Layers className="w-8 h-8 text-gray-600" />,
+    //   title: "Others",
+    //   skills: [ "Keycloak", "Linux Administration"]
+    // }
   ];
 
   return (

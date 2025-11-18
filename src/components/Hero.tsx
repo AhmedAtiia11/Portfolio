@@ -15,14 +15,15 @@ const Hero = () => {
               Ahmed Atiia
             </h1>
             <p className="text-xl md:text-2xl text-blue-600 mb-6">
-              DevOps Engineer / Site Reliability Engineer
+              DevOps Engineer
             </p>
            
           </div>
           
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed font-bold">
-            I'm a results-driven DevOps Engineer specializing in scalable infrastructure design,
-             automated CI/CD pipelines, cloud-native production environment management.
+              I specialize in Kubernetes orchestration, GitOps automation, DevSecOps tooling, and cloud-native infrastructure.
+              With hands-on experience in CI/CD, observability, and secure delivery pipelines, I help teams ship reliable, scalable, and high-performing applications.
+
             
           </p>
           
