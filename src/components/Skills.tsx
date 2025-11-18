@@ -44,8 +44,6 @@ const Skills = () => {
       skills: ["Golang", "Python", "Bash"]
     }
   ];
-};
-
 
   return (
     <section id="skills" className="py-20 bg-gray-50">
