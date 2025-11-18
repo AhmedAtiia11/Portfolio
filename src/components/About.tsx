@@ -34,7 +34,7 @@ const About = () => {
           I specialize in Kubernetes orchestration, GitOps workflows, and secure CI/CD automation—designing platforms that are resilient, observable, and built for high performance. I enjoy tackling complex infrastructure challenges end-to-end, simplifying operations, reducing deployment friction, and improving overall system reliability.          </p>
           <p className="text-lg text-gray-900 max-w-4xl mx-auto mt-4">
             I’m passionate about continuous learning, DevSecOps practices, and finding smarter ways to design and automate modern infrastructure. Every challenge is an opportunity to build something cleaner, faster, and more reliable.                  </p>
-          <p>
+          <p className="text-lg text-gray-900 max-w-4xl mx-auto mt-4">
           You can reach me at{' '}
           <a href="mailto:ahmedatya1288@gmail.com" className="text-blue-600 hover:underline">
             ahmedatya1288@gmail.com
