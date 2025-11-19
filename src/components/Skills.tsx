@@ -1,3 +1,12 @@
+import {
+  Server,
+  GitBranch,
+  Shield,
+  Cloud,
+  Activity,
+  Code
+} from "lucide-react";
+
 const Skills = () => {
   const skillCategories = [
     {
@@ -13,7 +22,8 @@ const Skills = () => {
     {
       icon: <Shield className="w-8 h-8 text-pink-600" />,
       title: "DevSecOps",
-      skills: ["SonarQube", "Trivy", "OPA Conftest", "Talisman", "Falco", "Istio", "Vault", "Keycloak"]
+      skills: ["SonarQube", "Trivy", "OPA Conftest", "Talisman", "Falco", "Istio", "Vault", "Keycloak"],
+      twoColumn: true // ⭐ Special layout flag
     },
     {
       icon: <Cloud className="w-8 h-8 text-blue-600" />,
@@ -33,38 +43,41 @@ const Skills = () => {
   ];
 
   return (
-   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-  {skillCategories.map((category, index) => (
-    <div
-      key={index}
-      className="p-6 bg-white rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow"
-    >
-      <div className="flex items-center gap-3 mb-4">
-        {category.icon}
-        <h3 className="text-xl font-semibold text-gray-800">{category.title}</h3>
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      {skillCategories.map((category, index) => (
+        <div
+          key={index}
+          className="p-6 bg-white rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-all"
+        >
+          {/* Header */}
+          <div className="flex items-center gap-3 mb-4">
+            {category.icon}
+            <h3 className="text-xl font-semibold text-gray-800">
+              {category.title}
+            </h3>
+          </div>
 
-      {/* Conditionally apply 2-column grid ONLY for DevSecOps */}
-      <div
-        className={
-          category.title === "DevSecOps"
-            ? "grid grid-cols-2 gap-2"                 // ⭐ Two-column layout
-            : "flex flex-wrap gap-2"                   // ⭐ Default layout
-        }
-      >
-        {category.skills.map((skill, idx) => (
-          <span
-            key={idx}
-            className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg font-medium"
+          {/* Skills */}
+          <div
+            className={
+              category.twoColumn
+                ? "grid grid-cols-2 gap-2"
+                : "flex flex-wrap gap-2"
+            }
           >
-            {skill}
-          </span>
-        ))}
-      </div>
+            {category.skills.map((skill, idx) => (
+              <span
+                key={idx}
+                className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg font-medium shadow-sm hover:bg-gray-200 transition"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
   );
 };
+
 export default Skills;
