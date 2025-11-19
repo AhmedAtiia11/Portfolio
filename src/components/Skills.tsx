@@ -80,7 +80,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-4">
                 {category.title}
               </h3>
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
@@ -89,7 +89,18 @@ const Skills = () => {
                     {skill}
                   </div>
                 ))}
-              </div>
+              </div> */}
+              {/* Smaller skill chips + two columns */}
+          <div className="grid grid-cols-2 gap-2">
+            {category.skills.map((skill, idx) => (
+              <span
+                key={idx}
+                className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md font-medium whitespace-nowrap"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
             </div>
           ))}
         </div>
