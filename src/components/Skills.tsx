@@ -26,17 +26,17 @@ const Skills = () => {
     {
       icon: <Cloud className="w-8 h-8 text-blue-600" />,
       title: "Cloud and Infrastructure",
-      skills: ["AWS", "Terraform", "Ansible", "Linux (L1/L2)"]
+      skills: ["AWS","Oracle Cloud", "Terraform", "Ansible", "Linux (L1/L2)"]
     },
     {
       icon: <Shield className="w-8 h-8 text-red-600" />,
       title: "Monitoring & Observability",
-      skills: ["Prometheus", "Grafana", "Loki", "OpenTelemetry"]
+      skills: ["Prometheus", "Grafana", "Loki", "Zipkin", "OpenTelemetry"]
     },
     {
       icon: <Shield className="w-8 h-8 text-pink-600" />,
       title: "DevSecOps",
-      skills: ["SonarQube", "Trivy", "OPA Conftest", "Talisman", "Falco", "Istio", "Vault" , "Keycloak"]
+      skills: ["SonarQube", "Trivy", "OPA Conftest", "Gitleaks", "Falco", "Istio", "Vault" , "Keycloak"]
     },
     {
       icon: <HardDrive className="w-8 h-8 text-orange-600" />,
